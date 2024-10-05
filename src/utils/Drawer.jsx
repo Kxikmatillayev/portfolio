@@ -115,10 +115,6 @@ export function DrawerDefault() {
                             />
                         </button>
                     </div>
-
-                    <div>
-                        <SecondSwitcher />
-                    </div>
                 </div>
             </Drawer>
         </React.Fragment>

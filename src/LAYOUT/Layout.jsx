@@ -1,15 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import Loader from '../utils/Loader/Loader'
 
 const Layout = ({ children }) => {
+    const [loader, setLoader] = useState(true)
+    useEffect(() => {
+        setTimeout(() => {
+            setLoader(false)
+        }, 2500);
+    }, [])
+
     return (
         <>
-            <Header />
+            {loader ? (<Loader />) : (
+                <>
+                    <Header />
 
-            {children}
+                    {children}
 
-            <Footer />
+                    <Footer />
+                </>
+            )}
+
         </>
     )
 }

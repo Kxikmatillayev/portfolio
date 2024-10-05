@@ -1,14 +1,16 @@
 import React from 'react'
-import Resume from '../Resume' 
+import Resume from '../Resume'
 import Hero from '../Hero'
-// import Global from '../Global'
+import Center from '../CENTER/Center'
+import End from '../ENDSAYT/End'
 
 const Home = () => {
   return (
-    <main className='font-exo'> 
+    <main className='font-exo dark:bg-dakr'>
       <Hero />
       <Resume />
-      {/* <Global /> */}
+      <Center />
+      <End />
     </main>
   )
 }

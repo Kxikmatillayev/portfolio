@@ -16,9 +16,15 @@ import uzGlobal from "./uz/global";
 import enTajriba from "./en/tajriba";
 import ruTajriba from "./ru/tajriba";
 import uzTajriba from "./uz/tajriba";
-
-
-
+import enCenter from "./en/center";
+import ruCenter from "./ru/center";
+import uzCenter from "./uz/center";
+import ezBtn from "./en/btn";
+import ruBtn from "./ru/btn";
+import uzBtn from "./uz/btn";
+import enEnd from "./en/end";
+import ruEnd from "./ru/end";
+import uzEnd from "./uz/end";
 
 
 const resources = {
@@ -27,21 +33,30 @@ const resources = {
         hero: enHero,
         resumcrd: enResumcrd,
         global: enGlobal,
-        tajriba: enTajriba
+        tajriba: enTajriba,
+        center: enCenter,
+        btn: ezBtn,
+        end: enEnd,
     },
     ru: {
         layout: ruLayout,
         hero: ruHero,
         resumcrd: ruResumcrd,
         global: ruGlobal,
-        tajriba: ruTajriba
+        tajriba: ruTajriba,
+        center: ruCenter,
+        btn: ruBtn,
+        end: ruEnd,
     },
     uz: {
         layout: uzLayout,
         hero: uzHero,
         resumcrd: uzResumcrd,
         global: uzGlobal,
-        tajriba: uzTajriba
+        tajriba: uzTajriba,
+        center: uzCenter,
+        btn: uzBtn,
+        end: uzEnd,
     },
 };
 
