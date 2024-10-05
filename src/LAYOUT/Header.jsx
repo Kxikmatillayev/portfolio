@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../utils/SwitcherLanguage';
-import Button from '../Button';
 import useStore from '../utils/zustand';
 import { DrawerDefault } from '../utils/Drawer';
 import Phone from '../utils/Phone';
 
 const Header = () => {
-    const { theme, toggleTheme } = useStore()
+    const { theme, toggleTheme } = useStore();
     const { t } = useTranslation("layout");
+
     return (
         <header className='bg-oq dark:bg-dakr py-[20px] font-exo sticky top-0 shadow-md shadow-dakr dark:shadow-oq z-20'>
             <div className='px-[20px] sm:container flex flex-row items-center justify-between'>
@@ -24,7 +24,11 @@ const Header = () => {
 
                 <div className='flex flex-row items-center gap-[5px] sm:gap-[20px]'>
                     <button onClick={toggleTheme} className='sm:flex hidden'>
-                        <img src={theme == "light" ? '/public/moon.png' : '/public/sun.png'} alt="" width={25} />
+                        <img
+                            src={theme === 'light' ? '/moon.png' : '/sun.png'}
+                            alt={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
+                            width={25}
+                        />
                     </button>
                     <LanguageSwitcher />
                     <a href="tel:+998909041685"><Phone /></a>
@@ -32,7 +36,7 @@ const Header = () => {
                 </div>
             </div>
         </header>
-    )
+    );
 }
 
-export default Header
+export default Header;

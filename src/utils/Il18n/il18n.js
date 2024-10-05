@@ -13,6 +13,9 @@ import uzResumcrd from "./uz/resumcrd";
 import enGlobal from "./en/global";
 import ruGlobal from "./ru/global";
 import uzGlobal from "./uz/global";
+import enTajriba from "./en/tajriba";
+import ruTajriba from "./ru/tajriba";
+import uzTajriba from "./uz/tajriba";
 
 
 
@@ -23,19 +26,22 @@ const resources = {
         layout: enLayout,
         hero: enHero,
         resumcrd: enResumcrd,
-        global: enGlobal
+        global: enGlobal,
+        tajriba: enTajriba
     },
     ru: {
         layout: ruLayout,
         hero: ruHero,
         resumcrd: ruResumcrd,
-        global: ruGlobal
+        global: ruGlobal,
+        tajriba: ruTajriba
     },
     uz: {
         layout: uzLayout,
         hero: uzHero,
         resumcrd: uzResumcrd,
-        global: uzGlobal
+        global: uzGlobal,
+        tajriba: uzTajriba
     },
 };
 
