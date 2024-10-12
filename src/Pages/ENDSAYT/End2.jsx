@@ -24,10 +24,11 @@ const End2 = () => {
     const sendMessageBot = (e) => {
         e.preventDefault();
 
-        const phoneRegex = /^\+998\d{9}$/;
+        // No restriction on the number of digits after +998
+        const phoneRegex = /^\+998\d{0,}$/;
 
         if (!formData.name || !phoneRegex.test(phone.number)) {
-            setError('Please fill out all required fields: Name and a valid Phone number (+998 + 9 digits).');
+            setError('Please fill out all required fields: Name and a valid Phone number (+998).');
             return;
         }
 
@@ -70,14 +71,13 @@ const End2 = () => {
         });
     };
 
-
     const closeModal = () => {
         setIsModalOpen(false);
     };
 
     return (
         <>
-            <section className='dark:bg-dakr py-10 dark:text-oq'>
+            <section className='dark:bg-dark py-10 dark:text-oq'>
                 <section className='container flex flex-col justify-center items-center'>
                     <h1 className='text-3xl underline font-bold pb-10'>{t("boglanish")}</h1>
                     <section className='flex flex-col md:flex-row justify-center items-center gap-10 w-full'>
