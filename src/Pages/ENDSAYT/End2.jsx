@@ -77,7 +77,7 @@ const End2 = () => {
 
     return (
         <>
-            <section className='dark:bg-dark py-10 dark:text-oq'>
+            <section className='dark:bg-dakr py-10 dark:text-oq'>
                 <section className='container flex flex-col justify-center items-center'>
                     <h1 className='text-3xl underline font-bold pb-10'>{t("boglanish")}</h1>
                     <section className='flex flex-col md:flex-row justify-center items-center gap-10 w-full'>
